@@ -4,6 +4,49 @@
 
 ---
 
+### Technology Stack & Core Badges
+
+| Group | Badges |
+| :--- | :--- |
+| **Frontend** | ![Next.js](https://img.shields.io/badge/Next.js-14.2.35-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.4.5-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) |
+| **Backend API** | ![Node.js](https://img.shields.io/badge/Node.js-v20-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-4.19.2-000000?style=flat-square&logo=express&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5.4.5-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| **Agentic AI** | ![Python](https://img.shields.io/badge/Python-3.13.7-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688?style=flat-square&logo=fastapi&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-0.2.74-FF6F00?style=flat-square&logo=langchain&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Google_Gemini-3.6_Flash-8E44AD?style=flat-square&logo=googlegemini&logoColor=white) |
+| **Data & Workflow** | ![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.0-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![n8n](https://img.shields.io/badge/n8n-Workflow_Automation-FF6584?style=flat-square&logo=n8n&logoColor=white) |
+| **Testing & Evaluation** | ![Pytest](https://img.shields.io/badge/Pytest-9.1.1-0A9EDC?style=flat-square&logo=pytest&logoColor=white) ![Node Test Runners](https://img.shields.io/badge/Node_Test_Runners-TypeScript-3178C6?style=flat-square&logo=node.js&logoColor=white) |
+
+---
+
+## Architecture at a Glance
+
+```mermaid
+flowchart TD
+    User([User / Operator]) -->|Interacts via UI / Copilot| Frontend[Next.js 14 Web Application]
+    Frontend -->|HTTP / REST API| Backend[Node.js Express API Gateway]
+    Backend -->|Proxy + Context Resolution| FastAPI[Python FastAPI Microservice]
+    FastAPI -->|Stateful Graph Execution| LangGraph[LangGraph Specialist Agents\nReceivables • P2P • Reconciliation]
+    LangGraph -->|Structured Reasoning| Gemini[Google Gemini 3.6 Flash LLM]
+    LangGraph -->|Enforces Safety Rules| Policy[Deterministic Policy Rule Engine\nRULE 1-4 Safety Gates]
+    Policy -->|Proposes Interventions| Planner[Structured Action Planner]
+    Planner -->|Operational Dispatch| n8n[n8n Workflow Engine\nReminders • Tasks • Document Requests]
+    Planner -->|Financial Source of Truth| Supabase[(Supabase PostgreSQL Ledger\nInvoices • Payments • Allocations)]
+    Supabase -->|Closed-Loop Measurement| Audit[Audit Logs & Recovery Measurement]
+```
+
+### Technology Responsibility & Layer Mapping
+
+| Technology | Layer | Role & Responsibility in Platform |
+| :--- | :--- | :--- |
+| **Next.js 14 / React 18** | Frontend UI | Operator financial console, interactive Case File view, and co-pilot workspace |
+| **Node.js / Express** | API Gateway | Ingress REST API, proxy timeout handling (30s), CORS, and conversational context service |
+| **Python 3.13 / FastAPI** | Agent Microservice | High-performance agent execution microservice and policy execution layer |
+| **LangGraph** | Agent Orchestration | Stateful multi-agent graph workflows for Receivables, P2P, Reconciliation & Supervisor |
+| **Google Gemini 3.6 Flash** | Reasoning Engine | Contextual B2B financial reasoning, signal extraction, and structured JSON output |
+| **Supabase / PostgreSQL** | Data & Audit Layer | Authoritative financial ledger source of truth and immutable execution audit log storage |
+| **n8n Automation Engine** | Workflow Automation | Controlled operational execution runner for reminders, task creation, and document requests |
+| **Pytest & Node Runners** | Testing & Verification | Automated test suites (33 Pytest cases, 14 Node integration/semantic test cases) |
+
+---
+
 ## 1. Executive Summary
 
 Traditional financial operations software displays overdue invoices on static dashboards and leaves prioritization, customer follow-up, and discrepancy resolution to manual human effort. Rule-based systems trigger blunt reminders based solely on due dates without evaluating payment commitments, historical customer reliability, or underlying accounting exceptions.
