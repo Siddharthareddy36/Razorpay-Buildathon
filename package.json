@@ -1,0 +1,13 @@
+{
+  "name": "ai-revenue-recovery-receivables-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Revenue Recovery & Receivables Intelligence - Monorepo root",
+  "scripts": {
+    "dev": "node scripts/dev-runner.js",
+    "start": "node scripts/dev-runner.js",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "type-check": "npm --prefix backend run type-check && npm --prefix frontend run type-check"
+  }
+}

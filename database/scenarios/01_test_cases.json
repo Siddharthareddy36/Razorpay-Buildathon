@@ -1,0 +1,26 @@
+{
+  "description": "Pre-configured test scenarios for receivables intelligence evaluation",
+  "scenarios": [
+    {
+      "id": "scenario_overdue_high_value",
+      "name": "High Value Overdue Collection",
+      "focus": "Prioritize invoices exceeding ₹10L overdue by >30 days",
+      "expectedPriority": "HIGH",
+      "testInvoice": "INV-2024-001"
+    },
+    {
+      "id": "scenario_broken_promise",
+      "name": "Broken Payment Commitment",
+      "focus": "Identify customer promises past due date without matching payment allocation",
+      "expectedStatus": "broken",
+      "testCustomer": "Acme India Enterprises"
+    },
+    {
+      "id": "scenario_tds_shortpay_mismatch",
+      "name": "TDS / Short Pay Reconciliation Mismatch",
+      "focus": "Detect payment received lower than invoice expected amount due to 10% TDS deduction",
+      "expectedExceptionReason": "Possible TDS deduction mismatch",
+      "testInvoice": "INV-2024-036"
+    }
+  ]
+}
