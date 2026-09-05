@@ -107,6 +107,34 @@ The Promise-to-Pay Agent evaluates the promised amount, promised date, received 
 
 ---
 
+## AI Operations Copilot
+
+The AI Operations Copilot provides a natural-language interface for investigating receivables, invoices, customers, payment commitments, and financial exceptions.
+
+Instead of manually navigating through multiple financial screens, an operator can ask a question and the system routes the request to the relevant intelligence and returns a grounded response using application and database context.
+
+### 1. Portfolio-Level Investigation
+
+![AI Assistant Portfolio Investigation](docs/screenshots/ai-assistant-portfolio.png)
+
+The assistant can answer portfolio-level questions such as which invoices require attention. It analyzes the live receivables context and returns prioritized accounts, outstanding exposure, overdue information, recommendations, and policy status.
+
+### 2. Invoice-Level Intelligence
+
+![AI Assistant Invoice Analysis](docs/screenshots/ai-assistant-invoice-analysis.png)
+
+The assistant can investigate a specific invoice and explain why it requires attention, including outstanding amount, overdue duration, risk signals, recommendations, and policy decisions.
+
+### 3. Customer Context & Conversational Investigation
+
+![AI Assistant Customer Context](docs/screenshots/ai-assistant-customer-context.png)
+
+The assistant can continue an investigation using the active case context and retrieve customer-level information such as customer risk, invoice exposure, and broken payment commitments.
+
+The assistant is designed to preserve relevant conversational context so follow-up questions can refer to the active invoice or customer without repeatedly providing the same identifier.
+
+---
+
 ## 2. Business Problem
 
 Enterprise financial teams face immense friction in managing working capital due to fragmented accounting systems, uncoordinated customer communications, and manual discrepancy tracking.
