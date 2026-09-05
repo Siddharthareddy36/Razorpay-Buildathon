@@ -65,6 +65,25 @@ The **AI Revenue Recovery & Receivables Intelligence Platform** is an enterprise
 
 ---
 
+## Product Screenshots
+
+### Operations Dashboard
+
+![AI Revenue Recovery Operations Dashboard](docs/screenshots/operations-dashboard.png)
+
+The Receivables Overview provides an operational snapshot of the financial portfolio, including revenue at risk, total outstanding exposure, overdue invoices, active payment commitments, reconciliation exceptions, and prioritized accounts requiring attention.
+
+Key capabilities visible in this view:
+
+- Portfolio-level financial exposure monitoring
+- Revenue-at-risk and overdue balance tracking
+- Active payment commitment visibility
+- Reconciliation exception monitoring
+- Priority-ranked receivables requiring operational attention
+- Direct navigation into detailed Financial Case Files
+
+---
+
 ## 2. Business Problem
 
 Enterprise financial teams face immense friction in managing working capital due to fragmented accounting systems, uncoordinated customer communications, and manual discrepancy tracking.
