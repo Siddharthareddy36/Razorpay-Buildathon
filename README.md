@@ -67,20 +67,43 @@ The **AI Revenue Recovery & Receivables Intelligence Platform** is an enterprise
 
 ## Product Screenshots
 
-### Operations Dashboard
+### 1. Receivables Management
 
-![AI Revenue Recovery Operations Dashboard](docs/screenshots/operations-dashboard.png)
+![Receivables Management](docs/screenshots/receivables-management.png)
 
-The Receivables Overview provides an operational snapshot of the financial portfolio, including revenue at risk, total outstanding exposure, overdue invoices, active payment commitments, reconciliation exceptions, and prioritized accounts requiring attention.
+The Receivables Management view helps operators monitor outstanding exposure, overdue accounts, broken commitments, and prioritize invoices that need attention first.
 
-Key capabilities visible in this view:
+---
 
-- Portfolio-level financial exposure monitoring
-- Revenue-at-risk and overdue balance tracking
-- Active payment commitment visibility
-- Reconciliation exception monitoring
-- Priority-ranked receivables requiring operational attention
-- Direct navigation into detailed Financial Case Files
+### 2. Payment Commitments
+
+![Payment Commitments](docs/screenshots/payment-commitments.png)
+
+The Payment Commitments workspace tracks customer promises, including active, broken, and fulfilled commitments, so operators can follow up based on actual commitment history.
+
+---
+
+### 3. Financial Case File
+
+![Financial Case File](docs/screenshots/financial-case-file.png)
+
+The Financial Case File brings the invoice amount, paid amount, outstanding balance, due date, overdue status, and Receivables Intelligence into a single investigation view.
+
+---
+
+### 4. Multi-Agent Investigation & Policy
+
+![Multi-Agent Investigation](docs/screenshots/multi-agent-investigation.png)
+
+The investigation workspace combines customer history, Promise-to-Pay signals, reconciliation status, specialist findings, policy decisions, and the recommended next action in one view.
+
+---
+
+### 5. Promise-to-Pay Intelligence
+
+![Promise-to-Pay Intelligence](docs/screenshots/p2p-intelligence.png)
+
+The Promise-to-Pay Agent evaluates the promised amount, promised date, received allocation, fulfillment status, and customer commitment reliability before recommending the next collection action.
 
 ---
 
